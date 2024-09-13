@@ -1,7 +1,7 @@
 package com.clinica.dh.repository;
 
 
-import com.dh.clinica.entity.Domicilio;
+import com.clinica.dh.entity.Domicilio;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
