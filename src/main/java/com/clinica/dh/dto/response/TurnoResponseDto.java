@@ -13,5 +13,6 @@ public class TurnoResponseDto {
     private Integer id;
     private PacienteResponseDto pacienteResponseDto;
     private OdontologoResponseDto odontologoResponseDto;
-    private String fechaTurno;
+    private String fechaTurno; // Nombre del campo actualizado para coincidir con la entidad
 }
+

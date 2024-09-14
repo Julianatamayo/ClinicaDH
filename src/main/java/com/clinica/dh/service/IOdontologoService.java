@@ -7,15 +7,15 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IOdontologoService {
-    Odontologo registrarOdontologo(Odontologo odontologo);
+    Odontologo registrarOdontologo(Odontologo odontologo); // Asegúrate de usar este nombre
 
     List<Odontologo> obtenerTodos();
 
     Optional<Odontologo> encontrarPorId(Integer id);
 
-    void actualizarodontologo(Odontologo odontologo);
+    void actualizarOdontologo(Odontologo odontologo);
 
-    void eliminarodontologo(Integer id);
+    void eliminarOdontologo(Integer id);
 
     List<Odontologo> buscarPorApellidoyNombre(String apellido, String nombre);
 
@@ -24,3 +24,4 @@ public interface IOdontologoService {
 
     Optional<Odontologo> buscarPorMatricula(String matricula);
 }
+

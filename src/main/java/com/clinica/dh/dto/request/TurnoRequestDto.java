@@ -12,5 +12,5 @@ import lombok.Setter;
 public class TurnoRequestDto {
     private Integer paciente_id;
     private Integer odontologo_id;
-    private String fechaTurno;
+    private String fechaTurno; // Nombre del campo actualizado para coincidir con la entidad
 }

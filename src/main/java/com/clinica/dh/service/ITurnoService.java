@@ -9,14 +9,12 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ITurnoService {
-    TurnoResponseDto registrarTurno(TurnoRequestDto turnoRequestDto);
-
-    Optional<TurnoResponseDto> encontrarPorId(Integer id);
-
-    List<TurnoResponseDto> obtenerTodos();
-
-    void actualizarTurno(TurnoModificarDto turnoModificarDto);
+    TurnoResponseDto guardarTurno(TurnoRequestDto turnoRequestDto);
+    Optional<TurnoResponseDto> buscarPorId(Integer id);
+    List<TurnoResponseDto> buscarTodos();
+    void modificarTurno(TurnoModificarDto turnoModificarDto);
     void eliminarTurno(Integer id);
-    List<Turno> buscarTurnosPorApellidoPaciente(String apellidoPaciente);
-    List<Turno> buscarTurnosPorMatriculaOdontologo(String matriculaOdontologo);
+    List<Turno> buscarTurnoPaciente(String apellidoPaciente);
+    List<Turno> buscarTurnoOdontologo(String matriculaOdontologo);
 }
+
